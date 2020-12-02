@@ -1,0 +1,62 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "Post 1",
+      "body": "This is the post body",
+      "publishedAt": "2020-10-03"
+    },
+    {
+      "id": "2",
+      "title": "Post Two",
+      "body": "This is the post body",
+      "publishedAt": "10-01-2020"
+    },
+    {
+      "id": "3",
+      "title": "Post Three",
+      "body": "This is the post body",
+      "publishedAt": "10-01-2020"
+    },
+    {
+      "title": "Post Four",
+      "body": "This is the body for post 4",
+      "publishedAt": "2020-10-06",
+      "id": "DdCICG7"
+    },
+    {
+      "title": "Promotion",
+      "body": "I am lorem ipsum dolot              qsqks,dlk, \nqsdkq,dlqs,d\nqsq,k..d,k,kd,lsd\n\n\nqdksdlk,df\n\n.",
+      "publishedAt": "2020-11-06",
+      "id": "D_hraL0"
+    },
+    {
+      "title": "Hello",
+      "body": " Wordl",
+      "publishedAt": "2020-10-25",
+      "id": "kKl8PaT"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "John Smith Hmida",
+      "email": "john@example.com"
+    },
+    {
+      "name": "autocad",
+      "email": "epeek.art@gmail.com",
+      "id": "8bQYlqJ"
+    },
+    {
+      "name": "Younes",
+      "email": "younesmaafi@gmail.com",
+      "id": "6C7_z_8"
+    },
+    {
+      "name": "Hmida",
+      "email": "azd",
+      "id": "SlGatgJ"
+    }
+  ]
+}

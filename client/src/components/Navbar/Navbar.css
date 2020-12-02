@@ -1,0 +1,30 @@
+/* nav {
+  background-color: #c7c6c6;
+  height: 9vh;
+  min-height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.nav-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  height: 60px;
+}
+
+.brand {
+  color: #333;
+  font-size: 3rem;
+  margin: 0;
+}

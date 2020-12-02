@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vehicules",
+  "info": {
+    "name": "vehicule",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "matricule": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Marques": {
+      "type": "enumeration",
+      "enum": [
+        "Ammann",
+        "Balawin",
+        "Behr",
+        "Cat",
+        "Deutz",
+        "Ford",
+        "Gebpants",
+        "Hyundai",
+        "Komatsu",
+        "Man",
+        "Merlospa",
+        "Nissan",
+        "Onnuri",
+        "Planetfilter",
+        "Renault",
+        "Sacer",
+        "Trex",
+        "Toyota"
+      ],
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Camion",
+        "SemiRemorque",
+        "Plateau",
+        "T10"
+      ],
+      "required": true
+    }
+  }
+}
