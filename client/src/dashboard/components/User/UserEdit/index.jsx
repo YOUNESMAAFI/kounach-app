@@ -6,7 +6,8 @@ const UserEdit = (props) => {
     <Edit title="Edit a Post" {...props}>
       <SimpleForm>
         <TextInput disabled source="id" />
-        <TextInput source="name" />
+        <TextInput source="username" />
+        <TextInput source="password" />
         <TextInput source="email" />
       </SimpleForm>
     </Edit>

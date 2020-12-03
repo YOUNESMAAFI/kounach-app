@@ -6,7 +6,8 @@
   "scripts": {
     "server": "json-server --watch db.json --port 5000 --middlewares ./range.js",
     "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "strapi": "npm develop --prefix api",
+    "dev": "concurrently \"npm run strapi\" \"npm run client\""
   },
   "keywords": [],
   "author": "Younes Maafi",

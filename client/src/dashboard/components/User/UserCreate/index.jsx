@@ -5,7 +5,8 @@ const UserCreate = (props) => {
   return (
     <Create {...props} title="Create a User">
       <SimpleForm>
-        <TextInput source="name" />
+        <TextInput source="username" />
+        <TextInput source="password" />
         <TextInput source="email" />
       </SimpleForm>
     </Create>

@@ -1,16 +1,27 @@
 import React from "react";
-import { Admin, Resource } from "react-admin";
+import { Admin, Resource, EditGuesser, ListGuesser } from "react-admin";
 
 import DashboardPanel from "./components/DashboardPanel";
-import PostList from "./components/PostList";
-import PostCreate from "./components/PostCreate";
-import PostEdit from "./components/PostEdit";
-import UserList from "./components/UserList";
-import UserCreate from "./components/UserCreate";
-import UserEdit from "./components/UserEdit";
-import VehiculeList from "./components/VehiculeList";
-import VehiculeCreate from "./components/VehiculeCreate";
-import VehiculeEdit from "./components/VehiculeEdit";
+//Posts
+import PostList from "./components/PostsComponents/PostList";
+import PostCreate from "./components/PostsComponents/PostCreate";
+import PostEdit from "./components/PostsComponents/PostEdit";
+//Users
+import UserList from "./components/User/UserList";
+import UserCreate from "./components/User/UserCreate";
+import UserEdit from "./components/User/UserEdit";
+//Vehicules
+import VehiculeList from "./components/Vehicules/VehiculeList";
+import VehiculeCreate from "./components/Vehicules/VehiculeCreate";
+import VehiculeEdit from "./components/Vehicules/VehiculeEdit";
+//Chauffeurs
+import ChauffeurList from "./components/Chauffeurs/ChauffeurList";
+import ChauffeurCreate from "./components/Chauffeurs/ChauffeurCreate";
+import ChauffeurEdit from "./components/Chauffeurs/ChauffeurEdit";
+
+//Trajets
+import TrajetList from "./components/Trajets/TrajetList";
+import TrajetEdit from "./components/Trajets/TrajetEdit";
 
 //Rest provider
 import simpleRestProvider from "ra-strapi-rest";
@@ -20,17 +31,29 @@ import DashboardIcon from "@material-ui/icons/Dashboard";
 import ArchiveIcon from "@material-ui/icons/Archive";
 import UnarchiveIcon from "@material-ui/icons/Unarchive";
 import LocalShippingIcon from "@material-ui/icons/LocalShipping";
+import AccountBoxIcon from "@material-ui/icons/AccountBox";
+import EmojiTransportationIcon from "@material-ui/icons/EmojiTransportation";
+import MyLoginPage from "./components/LoginPage";
+import Login from "../screens/Login";
+import authProvider from "./components/Auth";
 
-// import jsonServerProvider from "ra-data-json-server";
-// const dataProvider = jsonServerProvider("http://jsonplaceholder.typicode.com");
-// import restProvider from "ra-data-simple-rest";
 const dataProvider = simpleRestProvider("http://localhost:1337");
 
 const Dashboard = () => {
   return (
     <div>
-      <Admin dashboard={DashboardPanel} dataProvider={dataProvider}>
-        <Resource name="Dashboard" icon={DashboardIcon} />
+      <Admin
+        title="KOUNACH"
+        dashboard={DashboardPanel}
+        dataProvider={dataProvider}
+        // loginPage={Login}
+        authProvider={authProvider}
+      >
+        <Resource
+          title="KOUNACH Dashboard"
+          name="Dashboard"
+          icon={DashboardIcon}
+        />
 
         <Resource
           name="posts"
@@ -53,10 +76,20 @@ const Dashboard = () => {
           edit={VehiculeEdit}
           icon={LocalShippingIcon}
         />
+        <Resource
+          name="chauffeurs"
+          list={ChauffeurList}
+          create={ChauffeurCreate}
+          edit={ChauffeurEdit}
+          icon={AccountBoxIcon}
+        />
+        <Resource
+          name="trajets"
+          list={TrajetList}
+          edit={TrajetEdit}
+          icon={EmojiTransportationIcon}
+        />
       </Admin>
-      {/* <Admin dataProvider={dataProvider}>
-        <Resource name="posts" list={PostList}  />
-      </Admin> */}
     </div>
   );
 };

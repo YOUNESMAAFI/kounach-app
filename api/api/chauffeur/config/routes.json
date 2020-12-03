@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/chauffeurs",
+      "handler": "chauffeur.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/chauffeurs/count",
+      "handler": "chauffeur.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/chauffeurs/:id",
+      "handler": "chauffeur.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/chauffeurs",
+      "handler": "chauffeur.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/chauffeurs/:id",
+      "handler": "chauffeur.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/chauffeurs/:id",
+      "handler": "chauffeur.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chauffeurs",
+  "info": {
+    "name": "chauffeur",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "identifier": {
+      "type": "uid",
+      "targetField": "name"
+    }
+  }
+}

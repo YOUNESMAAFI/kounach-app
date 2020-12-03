@@ -79,7 +79,7 @@ const tiers = [
   {
     title: "Pro",
     subheader: "Le plus populaire",
-    price: "15",
+    price: "1500",
     description: [
       "20 utilisateurs inclus",
       "10 Go de stockage",
@@ -91,7 +91,7 @@ const tiers = [
   },
   {
     title: "Enterprise",
-    price: "30",
+    price: "3000",
     description: [
       "50 utilisateurs inclus",
       "30 Go de stockage",
@@ -187,10 +187,10 @@ export default function Pricing() {
                 <CardContent>
                   <div className={classes.cardPricing}>
                     <Typography component="h2" variant="h3" color="textPrimary">
-                      ${tier.price}
+                      {tier.price}
                     </Typography>
                     <Typography variant="h6" color="textSecondary">
-                      /mo
+                      DZD/mois
                     </Typography>
                   </div>
                   <ul>
