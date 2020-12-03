@@ -47,7 +47,7 @@ const Dashboard = () => {
         dashboard={DashboardPanel}
         dataProvider={dataProvider}
         // loginPage={Login}
-        authProvider={authProvider}
+        // authProvider={authProvider}
       >
         <Resource
           title="KOUNACH Dashboard"

@@ -6,7 +6,7 @@
   "scripts": {
     "server": "json-server --watch db.json --port 5000 --middlewares ./range.js",
     "client": "npm start --prefix client",
-    "strapi": "npm develop --prefix api",
+    "strapi": "strapi develop --prefix api",
     "dev": "concurrently \"npm run strapi\" \"npm run client\""
   },
   "keywords": [],
