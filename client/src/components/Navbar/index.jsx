@@ -11,6 +11,8 @@ import {
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
+import { useHistory } from "react-router-dom";
+
 const useStyles = makeStyles((theme) => ({
   "@global": {
     ul: {
@@ -37,6 +39,7 @@ const useStyles = makeStyles((theme) => ({
 
 const Navbar = () => {
   const classes = useStyles();
+  const history = useHistory();
   return (
     <div className="">
       <CssBaseline />
@@ -87,6 +90,7 @@ const Navbar = () => {
             color="primary"
             variant="outlined"
             className={classes.link}
+            onClick={() => history.push("/login")}
           >
             Login
           </Button>
