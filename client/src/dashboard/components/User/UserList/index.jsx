@@ -12,8 +12,8 @@ const UserList = (props) => {
   return (
     <List {...props}>
       <Datagrid>
-        <TextField source="id" />
         <TextField source="username" />
+        <TextField source="id" />
         <EmailField source="email" />
         <EditButton basePath="/users" />
         <DeleteButton basePath="/users" />

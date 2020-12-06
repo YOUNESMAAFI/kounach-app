@@ -25,12 +25,8 @@ const TrajetList = (props) => (
       <DateField source="depart_date" />
       <TextField source="arrival" />
       <DateField source="arrival_date" />
-      <DateField source="published_at" />
-      <DateField source="createdAt" />
-      <DateField source="updatedAt" />
-      <NumberField source="__v" />
       <TextField source="vehicule.Marques" />
-      <TextField source="matricule" />
+      <TextField source="vehicule.matricule" />
       <EditButton basePath="/trajets" />
       <DeleteButton basePath="/trajets" />
     </Datagrid>
